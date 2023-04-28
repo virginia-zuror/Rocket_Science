@@ -1,0 +1,56 @@
+.rockets{
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 2rem;
+}
+.All_rockets{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    text-align: justify;
+    background-color: #277fa21b;
+    border-radius: 4px;
+    padding: 1rem;
+    
+}
+.card h4{
+    text-transform: uppercase;
+    color: var(--primary);
+    
+
+}
+.images{
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+
+}
+.ImageRocket{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: all ease-in-out 0.4s;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+.ImageRocket:hover{
+    transform: scale(3);
+
+}

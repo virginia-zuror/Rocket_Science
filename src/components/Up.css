@@ -1,0 +1,26 @@
+.Up{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #e788132e;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Up:hover{
+    border: none;
+    transform: scale(1.1);
+    
+}
+
+
+.Up img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transform: rotate(-45deg);
+}
