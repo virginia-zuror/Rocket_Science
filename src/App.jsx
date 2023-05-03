@@ -1,8 +1,10 @@
 
 import './App.css'
 import Header from './components/Header'
+import History from './components/History'
 import { Rockets } from './components/Rockets'
 import Start from './components/Start'
+
 import Up from './components/Up'
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
     <Header/> 
     <Start/>  
     <Rockets/>
+    <History/>
     <Up/>
     </>
   )

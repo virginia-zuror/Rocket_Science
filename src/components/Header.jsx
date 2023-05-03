@@ -12,6 +12,7 @@ const Header = () => {
             <ul>
                 <li><a href='#start'>Start</a></li>
                 <li><a href='#rockets'>Rockets</a></li>
+                <li><a href='#history'>History</a></li>
             </ul>
         </nav>
     </div>

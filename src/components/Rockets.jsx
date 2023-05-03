@@ -1,28 +1,23 @@
-import axios from "axios";
+
 import "./Rockets.css";
-import { useEffect, useState } from "react";
+
+
+import { useEffect} from "react";
+import { useFetch } from '../hooks/useFetch';
 
 export const Rockets = () => {
-  const [rockets, setRockets] = useState([]);
+  
+  const {getInfo, info} = useFetch('rockets')
 
-  const getAllRockets = () => {
-    axios
-      .get("https://api.spacexdata.com/v4/rockets")
-      .then((res) => setRockets(res.data))
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
   useEffect(() => {
-    getAllRockets();
-  }, []);
+    getInfo();
+  });
 
   return (
-    <div id="rockets" className="rockets">
+   <div id="rockets" className="rockets">
       <h3>Rockets</h3>
       <div className="All_rockets">
-        {rockets &&
-          rockets.map((rk) => (
+        {info.map((rk) => (
             <figure key={rk.id} className="card">
               <h4>{rk.name}</h4>
               <h5>{rk.type.split(' ').map((letter) => letter.charAt(0).toUpperCase() + letter.slice(1)).join(' ')}</h5>
